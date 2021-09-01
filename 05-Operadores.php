@@ -75,11 +75,11 @@
 $num1 = 14;
 $num2 = 8;
 
-echo 'La suma entre número 1 y número 2 es ' . ($num1+$num2) . '<br>';
-echo 'La resta entre número 1 y número 2 es ' . ($num1-$num2) . '<br>';
-echo 'La multiplicación entre número 1 y número 2 es ' . ($num1*$num2) . '<br>';
-echo 'La división entre número 1 y número 2 es ' . ($num1/$num2) . '<br>';
-echo 'El resto entre número 1 y número 2 es ' . ($num1%$num2) . '<br>';
+echo 'La suma entre número 1 y número 2 es ' . ($num1 + $num2) . '<br>';
+echo 'La resta entre número 1 y número 2 es ' . ($num1 - $num2) . '<br>';
+echo 'La multiplicación entre número 1 y número 2 es ' . ($num1 * $num2) . '<br>';
+echo 'La división entre número 1 y número 2 es ' . ($num1 / $num2) . '<br>';
+echo 'El resto entre número 1 y número 2 es ' . ($num1 % $num2) . '<br>';
 
 //OPERADORES DE INCREMENTO
 $year = 2020;
