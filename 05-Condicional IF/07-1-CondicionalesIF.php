@@ -10,12 +10,12 @@ if($num3 < 10) {
 
 echo '<hr>';
 
-$pais = "Argentina";
+$provincia = "mendoza";
 
-if($pais != "santa fe") {
-    echo 'la ciudad esta escrita en mayúsculas';
+if($provincia == "mendoza") {
+    echo 'la provincia es mendoza';
 }else {
-    echo 'Están todas las letras escritas en minúsculas';
+    echo 'la provincia no es mendoza';
 }
 
 echo '<hr>';
@@ -43,11 +43,11 @@ if ($dia == 1) {
   echo 'Es Lunes';
 } else if ($dia == 2) {
   echo 'Es Martes';
-}else if ($dia == 3) {
+} else if ($dia == 3) {
   echo 'Es Miércoles';
-}else if ($dia == 4) {
+} else if ($dia == 4) {
   echo 'Es Jueves';
-}else if ($dia == 5) {
+} else if ($dia == 5) {
   echo 'Es Viernes';
 } else {
   echo 'Es fin de semana';
