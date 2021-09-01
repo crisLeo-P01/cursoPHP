@@ -22,20 +22,16 @@
  */
 
   $num1 = 77;
-  echo gettype($num1);
-  echo '<br>';
+  echo gettype($num1) . '<br>';
 
   $decimal = 27.4;
-  echo gettype($decimal);
-  echo '<br>';
+  echo gettype($decimal) . '<br>';
 
   $texto = 'Esto es texto';
-  echo gettype($texto);
-  echo '<br>';
+  echo gettype($texto) . '<br>';
 
   $boleano = true;
-  echo gettype($boleano);
-  echo '<br>';
+  echo gettype($boleano) . '<br>';
 
   $dumpMostrar = 'No imprime por pantalla pero con la función var_dump muestra el contenido';
   var_dump($dumpMostrar);
