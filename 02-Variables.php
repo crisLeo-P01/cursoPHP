@@ -9,9 +9,11 @@
 <body>
 
 <?php
-
+    $mititulo01 = 'Título del documento';
     $miVariable1 = 'Hola Mundo! Aprendiendo PHP';
     $miVariable2 = 'Segunda variable';
+
+    echo '<h1>' . $mititulo01 . '</h1>' . '<br>';
     echo $miVariable1 . '<br>';
     echo $miVariable2 . '<br>';
 
