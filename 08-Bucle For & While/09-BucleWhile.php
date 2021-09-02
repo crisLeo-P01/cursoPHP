@@ -26,6 +26,20 @@ while ($contador <= 10) {
 
 echo "<hr>";
 
+if (isset($_GET['numero02'])) { // isset comprueba si hay una variable o no
+    $numero02 = (int)$_GET['numero02']; // por defecto ha a decir que es un string por eso hay que castear poniendo entre paréntesis el valor de int. De esta forma damos por sentado que es un número entero.
+} else {
+    $numero02 = 1;
+}
+
+$contador03 = 1;
+while ($contador03 <= 10) {
+    echo "$numero02 x $contador03 = " . ($numero02*$contador03) . "<br>";
+    $contador03++;
+}
+
+echo "<hr>";
+
 echo "<h1>Bucle do...While</h1>";
 
 $edad = 22;
