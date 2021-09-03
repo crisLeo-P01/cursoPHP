@@ -18,7 +18,7 @@ echo "<hr>";
  */
 $num1 = 0;
 
-for ($i = 1; $i <= 100; $i++) {
+for ($i = 1; $i <= 30; $i++) {
     if ($i%2 == 0) {
         echo "$i <br>";
     }
@@ -34,7 +34,7 @@ echo "<hr>";
  */
 
 $contador = 0;
-while($contador <= 40) {
+while($contador <= 20) {
     $cuadrado = $contador * $contador;
     echo "El cuadrado de $contador es de $cuadrado <br>";
     $contador++;
@@ -42,8 +42,8 @@ while($contador <= 40) {
 
 echo "<hr>";
 
-for ($contador2 = 0; $contador2 <= 40; $contador2++) {
-    echo "El forCuadrado de $contador2 es de $i <br>";
+for ($contador2 = 0; $contador2 <= 10; $contador2++) {
+    echo "El forCuadrado de $contador2 es de " . ($contador2 * $contador2) . "<br>";
 }
 
 /* EJERCICIO 04
