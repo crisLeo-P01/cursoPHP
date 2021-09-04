@@ -46,6 +46,8 @@ for ($contador2 = 0; $contador2 <= 10; $contador2++) {
     echo "El forCuadrado de $contador2 es de " . ($contador2 * $contador2) . "<br>";
 }
 
+echo "<hr>";
+
 /* EJERCICIO 04
     Recoger dos números de la URL(Parámetros GET) y hacer todas las
     operaciones básicas de una calculadora(suma, resta, multiplicación y división)
@@ -62,4 +64,26 @@ if (isset($_GET['numero1']) && isset($_GET['numero2'])) {
     echo "División: " . ($numero1 / $numero2) . "<br>";
 } else {
     echo "Introduce correctamente los valores en la URL";
+}
+
+echo "<hr>";
+
+/* EJERCICIO 05
+    Hacer un programa que muestre todos los números entre dos números que nos llegue
+por la URL($_GET).
+ */
+
+if (isset($_GET['numero3']) && isset($_GET['numero4'])) {
+    $numero3 = $_GET['numero3'];
+    $numero4 = $_GET['numero4'];
+
+    if ($numero3 < $numero4) {
+        for ($i = $numero3; $i <= $numero4; $i++) {
+            echo "$i, ";
+        }
+    } else {
+        echo "El $numero3 debe ser mayor a $numero4";
+    }
+} else {
+    echo "Los parámetros no existen";
 }
