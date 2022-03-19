@@ -38,6 +38,11 @@ if(isset($_GET['numeroget'])) {
     echo 'No hay tabla por multiplicar';
 }
 
+// Otra forma de generar varias tablas a través de un bucle FOR
+for($i = 0; $i <= 10; $i++) {
+    tablaMultiplicar($i);
+}
+
 //////////////////////////////////////////////////
 
 function fraseMayus( $frase, $conversion = true ) {

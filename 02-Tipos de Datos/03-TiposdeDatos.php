@@ -44,7 +44,7 @@
   $resultado01 = strcmp($string01, $string02); //Devuelve 1 si no son iguales. 0 si son iguales
   echo "El resultado es $resultado01";
   echo '<br>';
-  //strcasecmp - También compara dos string pero no tiene en cuenta las mayúsculas y las minúsculas
+  //strcasecmp - También compara dos string, pero no tiene en cuenta las mayúsculas y las minúsculas
   $resultado02 = strcasecmp($string01, $string02);
   echo "El resultado es $resultado02";
 
