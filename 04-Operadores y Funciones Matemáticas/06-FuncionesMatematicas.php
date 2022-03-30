@@ -18,7 +18,7 @@ echo "El número absoluto de -4.2 es " . $num3 . "<br>";
 $num4 = ceil(2.3);
 echo "El número con ceil(2.3) es de " . $num4 . "<br>";
 
-//floor - Devuelve el siguiente valor de tipo integer (como float), redondeando value si fuera necesario.
+//floor - Devuelve el siguiente valor de tipo integer (como float), redondeando hacia abajo value si fuera necesario.
 $num5 = floor(2.9);
 echo "El número con floor(2.8) es de " . $num5 . "<br>";
 

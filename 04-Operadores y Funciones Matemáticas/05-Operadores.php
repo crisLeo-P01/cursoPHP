@@ -32,28 +32,27 @@
 
 <?php
 
-  if(isset($_POST["button"])) {
+  if(isset($_POST["button"])) { // isset comprueba si existe
     $numero01 = $_POST["num1"];
     $numero02 = $_POST["num2"];
     $operacion = $_POST["selOperador"];
 
     calcular($operacion);
-
   }
 
   function calcular($calculo) {
     if(!strcmp("Suma", $calculo)) {
       global $numero01;
       global $numero02;
-      echo "El resultado es: " . ($numero01 + $numero02);
+      echo "El resultado es: " . ($numero01 + $numero02) . "<br>";
     }elseif(!strcmp("Resta", $calculo)) {
       global $numero01;
       global $numero02;
-      echo "El resultado es: " . ($numero01 - $numero02);
+      echo "El resultado es: " . ($numero01 - $numero02) . "<br>";
     }elseif (!strcmp("Multiplicación", $calculo)) {
       global $numero01;
       global $numero02;
-      echo "El resultado es de " . ($numero01 * $numero02);
+      echo "El resultado es de " . ($numero01 * $numero02) . "<br>";
     }elseif (!strcmp("División", $calculo)) {
       global $numero01;
       global $numero02;
@@ -61,11 +60,11 @@
     } elseif (!strcmp("Incremento", $calculo)) {
       global $numero01;
       $numero01++;
-      echo "El resultado del incremento es de " . $numero01;
+      echo "El resultado del incremento es de " . $numero01 . "<br>";
     }else {
       global $numero01;
       $numero01--;
-      echo "El resultado del decremento es de " . $numero01;
+      echo "El resultado del decremento es de " . $numero01 . "<br>";
     }
   }
 
