@@ -45,19 +45,19 @@
     if(!strcmp("Suma", $calculo)) {
       global $numero01;
       global $numero02;
-      echo "El resultado es: " . ($numero01 + $numero02);
+      echo "El resultado es: " . ($numero01 + $numero02) . "<br>";
     }elseif(!strcmp("Resta", $calculo)) {
       global $numero01;
       global $numero02;
-      echo "El resultado es: " . ($numero01 - $numero02);
+      echo "El resultado es: " . ($numero01 - $numero02) . "<br>";
     }elseif (!strcmp("Multiplicación", $calculo)) {
       global $numero01;
       global $numero02;
-      echo "El resultado es de " . ($numero01 * $numero02);
+      echo "El resultado es de " . ($numero01 * $numero02) . "<br>";
     }elseif (!strcmp("División", $calculo)) {
       global $numero01;
       global $numero02;
-      echo "El resultado es de " . ($numero01 / $numero02);
+      echo "El resultado es de " . ($numero01 / $numero02) . "<br>";
     } elseif (!strcmp("Incremento", $calculo)) {
       global $numero01;
       $numero01++;
@@ -75,11 +75,11 @@
 $num1 = 14;
 $num2 = 8;
 
-echo 'La suma entre número 1 y número 2 es ' . ($num1 + $num2) . '<br>';
-echo 'La resta entre número 1 y número 2 es ' . ($num1 - $num2) . '<br>';
-echo 'La multiplicación entre número 1 y número 2 es ' . ($num1 * $num2) . '<br>';
-echo 'La división entre número 1 y número 2 es ' . ($num1 / $num2) . '<br>';
-echo 'El resto entre número 1 y número 2 es ' . ($num1 % $num2) . '<br>';
+echo 'La suma entre número 1= ' . "$num1" . ' y número 2= ' . "$num2" . ' es ' . ($num1 + $num2) . '<br>';
+echo 'La resta entre número 1= ' . "$num1" . ' y número 2= '. "$num2" .  ' es ' . ($num1 - $num2) . '<br>';
+echo 'La multiplicación entre número 1= ' . "$num1" . ' y número 2= '. "$num2" .  ' es ' . ($num1 * $num2) . '<br>';
+echo 'La división entre número 1= ' . "$num1" . ' y número 2= '. "$num2" .  ' es ' . ($num1 / $num2) . '<br>';
+echo 'La resto entre número 1= ' . "$num1" . ' y número 2= '. "$num2" .  ' es ' . ($num1 % $num2) . '<br>';
 
 //OPERADORES DE INCREMENTO
 $year = 2020;
