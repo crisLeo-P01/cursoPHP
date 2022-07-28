@@ -13,6 +13,12 @@ function suma( $num1, $num2 ) {
 
 suma( 5, 7 );
 
+/*
+Las mejores prácticas es que dentro de la función en vez de llevar un echo
+es mejor poner un constructor que en este caso es 'return'. 
+A la hora de llamar la función lo hacemos a través de un echo.
+*/
+
 function multiplicar( $num3, $num4 ) {
   $resultado = $num3 * $num4;
   return $resultado;
