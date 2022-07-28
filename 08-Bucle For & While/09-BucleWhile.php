@@ -49,3 +49,10 @@ do {
     echo "Tienes acceso al local privado número $contador2 <br>";
     $contador2++;
 }while($edad >= 21 && $contador2 <= 10);
+
+
+$contador3 = 30;
+do {
+    echo "Contador hacia atrás arrancando de " . $contador3 . "<br>";
+    $contador3--;
+} while ($contador3 >= 0);
