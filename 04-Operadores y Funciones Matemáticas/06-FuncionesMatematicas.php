@@ -39,7 +39,7 @@ echo "<h3>Casting</h3>";
 Un ejemplo de la conversión de tipos automática de PHP es el operador suma '+'. Si al menos uno de los operandos es float, entonces ambos operandos son evaluados como floats y el resultado será un float. De otra manera, los operandos serán interpretados como integers, y el resultado será entonces integer. Tenga en cuenta que esto no implica que se cambien los tipos de los propios operandos; el único cambio es en como se evalúan los operandos y en el tipo de expresión en sí mismo.
  */
 $number01 = "5";
-$number01 += 2; //El $number01 es uin string pero al colocarle un incremento PHP, interpreta que es de tipo entero.
+$number01 += 2; //El $number01 es un string pero al colocarle un incremento PHP, interpreta que es de tipo entero.
 $number01 += 5.75; //PHP ahora interpreta que es de tipo float. Implícitamente interpreta que es una variable de tipo float
 echo $number01 . "<br>";
 
