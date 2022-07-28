@@ -24,7 +24,7 @@ function multiplicar( $num3, $num4 ) {
 
 echo (multiplicar( 5, 9 ) . "<br>");
 
-//////////////////////////////////////////////////
+// ////////////////////////////////////////////////
 
 function tablaMultiplicar($numMulti) {
     echo "<h4>La tabla de multiplicar del $numMulti</h4>";
