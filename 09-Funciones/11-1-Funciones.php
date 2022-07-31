@@ -1,9 +1,9 @@
 <?php
 
-$nombre = "crisTian";
+$nombre1 = "crisTian";
 
-echo( strtolower( $nombre ) . "<br>" ); // Pone al string todo en minúsculas
-echo( strtoupper( $nombre ) . "<br>" ); // Pone al string todo en mayúsculas
+echo( strtolower( $nombre1 ) . "<br>" ); // Pone al string todo en minúsculas
+echo( strtoupper( $nombre1 ) . "<br>" ); // Pone al string todo en mayúsculas
 
 //////////////////////////////////////////////////
 
@@ -35,16 +35,16 @@ function tablaMultiplicar($numMulti) {
 }
 tablaMultiplicar(9);
 
+// Otra forma de generar varias tablas a través de un bucle FOR
+for($i = 0; $i <= 10; $i++) {
+  tablaMultiplicar($i);
+}
+
 //Otra forma es ingresando un número a través de la URL
 if(isset($_GET['numeroget'])) {
     tablaMultiplicar($_GET['numeroget']);
 } else {
-    echo 'No hay tabla por multiplicar';
-}
-
-// Otra forma de generar varias tablas a través de un bucle FOR
-for($i = 0; $i <= 10; $i++) {
-    tablaMultiplicar($i);
+    echo 'No hay tabla por multiplicar <br>';
 }
 
 //////////////////////////////////////////////////
@@ -60,5 +60,25 @@ function fraseMayus( $frase, $conversion = true ) {
   return $resultado02;
 }
 
-echo ( fraseMayus( "esto es una prueba" ) );
+echo ( fraseMayus( "esto es una prueba <br>" ) );
 
+//////////////////////////////////////////////////
+
+// Funciones dentro de otras
+
+function getNombre( $nombre ) {
+  $texto = 'Mi nombre es ' . $nombre;
+  return $texto;
+}
+
+function getApellido( $apellido ) {
+  $texto = 'Mi apellido es ' . $apellido;
+  return $texto;
+}
+
+function dameDatos( $nombre, $apellido ) {
+  $texto = getNombre( $nombre ) .'<br>'. getApellido( $apellido );
+  return $texto;
+}
+
+echo dameDatos( 'Cristian', 'Paiva' );
