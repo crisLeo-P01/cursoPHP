@@ -9,3 +9,7 @@ $bandas = ['Aerosmith', 'Bon Jovi', 'Korn', 'Limp Bizkit'];
 var_dump($peliculas);
 echo '<br>';
 var_dump($bandas);
+
+echo $peliculas[2];
+echo '<br>';
+echo $bandas[3];
