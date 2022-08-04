@@ -54,3 +54,51 @@ for( $i = 0; $i < 10; $i++ ) {
 }
 
 var_dump($numbers);
+
+/*
+  Ejercicio 3
+  Hacer un programa que compruebe si una variable está
+  vacía. Si está vacía, rellenarla con texto en minúsculas
+  y mostrarlo en mayúsculas y negrita.
+*/
+
+$modeloApple = '';
+
+if( empty( $modeloApple ) ) {
+  $modeloApple = 'La variable $modeloApple se encuentra vacía';
+  $mayusApple = strtoupper( $modeloApple );
+  echo "<strong>$mayusApple</strong>";
+}
+echo '<br>';
+/*
+  Ejercicio 3
+  Crear un string en php que tenga cuatro variables. 
+  - Tipo array
+  - tipo string
+  - tipo INT
+  - tipo boolean
+  Luego imprimir por pantalle el tipo de variable es
+*/
+
+$tipoArray = [32, 45, 105];
+$tipoString = 'Es una variable de tipo string';
+$tipoInt = 32;
+$tipoBoolean = true;
+
+if( is_array( $tipoArray ) ) {
+  echo 'la variable $tipoArray es de tipo array';
+}
+echo '<br>';
+if( is_string( $tipoString ) ) {
+  echo 'la variable $tipoString es de tipo string';
+}
+echo '<br>';
+if( is_int( $tipoInt) ) {
+  echo 'la variable $tipoInt es de tipo numerico';
+}
+echo '<br>';
+if( is_bool( $tipoBoolean) ) {
+  echo 'la variable $tipoBoolean es de tipo booleano';
+}
+
+
