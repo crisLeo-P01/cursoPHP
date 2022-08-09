@@ -7,29 +7,38 @@ var_dump($bandas);
 var_dump($numeros);
 
 
-///////////////////
+echo '///////////////////';
 
-echo '<h3>Lista ordenada descendiente</h3>';
+echo '<h3>Lista ordenada de menor a mayor</h3>';
 sort($bandas);
 var_dump($bandas);
 
-echo '<h3>Lista ordenada descendiente</h3>';
+echo '<h3>Lista ordenada de menor a mayor</h3>';
 sort($numeros);
 var_dump($numeros);
 
-///////////////////
+echo '///////////////////';
 
-echo '<h3>Lista ordenada ascendiente</h3>';
+echo '<h3>Lista ordenada de mayor a menor</h3>';
 arsort($bandas);
 var_dump($bandas);
 
-echo '<h3>Lista ordenada ascendiente</h3>';
+echo '<h3>Lista ordenada de mayor a menor</h3>';
 arsort($numeros);
 var_dump($numeros);
 
-///////////////////
+echo '///////////////////';
+
 echo '<h3>Agregando o eliminado indices de arrays </h3>';
 $marcasAutos = ['Peugeot', 'Renault', 'Ferrari', 'Audi', 'BMW'];
+var_dump($marcasAutos);
+
+// Agrega un elemento al principio del array
+array_unshift($marcasAutos, 'Bugatti');
+var_dump($marcasAutos);
+
+// Elimina un elemento al principio del array
+array_shift($marcasAutos);
 var_dump($marcasAutos);
 
 // Agrega un elemento al final del array
