@@ -1,8 +1,10 @@
 <?php
 
-/* Lo que hace session_destroy es cerrar toda sesión global.
-Si regresamos a la página principal se vuelve a crear
-esa sesión y poder seguir navegando por las demás páginas. */
+/* session_destroy() destruye toda la información asociada 
+con la sesión actual. No destruye ninguna de las variables 
+globales asociadas con la sesión, ni destruye la cookie 
+de sesión. Para volver a utilizar las variables 
+de sesión se debe llamar a session_start().*/
 session_start();
 
 session_destroy();

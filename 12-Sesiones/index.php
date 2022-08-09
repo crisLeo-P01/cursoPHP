@@ -23,7 +23,7 @@ session_start();
 $variable_normal = 'Soy una variable de texto';
   
 /* Variable de sesión */
-/* Este tipo de variable voy a poder utilizar en cualquier
+/* Este tipo de variable se va a poder utilizar en cualquier
 página de mi dominio */
 $_SESSION['variable_persistente'] = 'SOY UNA VARIABLE ACTIVA';
 
