@@ -39,10 +39,3 @@
   }
 
 ?>
-
-<?php if($error == 'ok') ?>
-  <h1>Datos validados correctamente</h1>
-  <p><?= $nombre ?></p>
-  <p><?= $apellido ?></p>
-  <p><?= $edad ?></p>
-  <p><?= $email ?></p>
