@@ -11,6 +11,7 @@
     $email = $_POST['email'];
     $pass = $_POST['pass'];
 
+    // preg_match => Realiza una comparación con una expresión regular
     if( !is_string($nombre) || preg_match('/[0-9]+/', $nombre) ) {
       $error = 'nombre';
     }
@@ -19,6 +20,7 @@
       $error = 'apellido';
     }
 
+    // filter_var => Filtra una variable con el filtro que se indique
     if( !is_int($edad) || !filter_var( $edad, FILTER_VALIDATE_INT ) ) {
       $error = 'edad';
     }

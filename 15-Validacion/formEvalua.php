@@ -12,7 +12,8 @@
   </style>
 </head>
 <body>
-  <?php include 'todook.php' ?>
+  
+  <?php include 'procesoValidacion.php' ?>
 
   <?php if($error == 'ok') ?>
   <h1>Datos validados correctamente</h1>

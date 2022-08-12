@@ -17,7 +17,7 @@
 
   <?php include 'error.php' ?>
 
-  <form action="procesar_formulario.php" method="POST">
+  <form action="formEvalua.php" method="POST">
     <label for="nombre">Nombre</label> <br>
     <input type="text" name="nombre" required="required"> <br>
 
