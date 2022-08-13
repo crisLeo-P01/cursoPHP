@@ -7,18 +7,34 @@ $archivo = fopen('fichero_texto.txt', "a+");
 Permisos de archivo PHP
   r => Permiso de lectura
   x => Permiso de ejecucion
-  w => Permiso de esctura
+  w => Permiso de escritura
   a+ => Permiso de leer y escribir
 */
 
 // Leer el archivo
-while( !feof($archivo) ) {
+while( !feof($archivo) ) { // feof => Recorre todas las líneas del archivo
   $contenido = fgets($archivo);
   echo $contenido . "<br>";
 }
 
 // Escribir un texto en el fichero_texto desde PHP
-fwrite($archivo, "Soy un texto introducido desde PHP <br>");
+fwrite($archivo, "<br>Soy un texto introducido desde PHP <br>");
+
+// Copiar un archivo
+copy('fichero_texto.txt', 'fichero_copiado.txt') or die('Error al copiar');
 
 // Cerrar archivo
 fclose($archivo);
+
+// Renombrar un archivo
+rename('fichero_texto.txt', 'texto_fichero.txt');
+
+// Eliminar un archivo
+// unlink('fichero_copiado.txt') or die('Error al eliminar el archivo');
+
+// Comprueba si existe un archivo
+if( file_exists('fichero_texto.txt') ) {
+  echo 'El archivo existe';
+} else {
+  echo 'El archivo no existe';
+}
