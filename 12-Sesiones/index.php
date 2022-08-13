@@ -17,7 +17,7 @@ nada en el lado del cliente ni en local. Quiere decir que es prácticamente
 invisible o no puede ser modificado por el cliente. */
 
 /*INICIAR SESIÓN*/
-session_start();
+session_start(); // las sesiones se guardan a nivel del backend del servidor
 
 /* Variable local */
 $variable_normal = 'Soy una variable de texto';
