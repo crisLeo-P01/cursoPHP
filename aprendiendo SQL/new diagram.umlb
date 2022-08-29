@@ -1,0 +1,30 @@
+{"_id":"4vADSTeIcakvzg6T","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"wZSSsUNoLyHqXMYh","name":"CATEGORIAS","kind":"Class","position":{"x":919.5,"y":413},"discriminator":"Class","stereotypes":[],"customDimension":{"width":221.34375,"height":111}}
+{"_id":"4xNBQPJUGbERjgWN","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"wZSSsUNoLyHqXMYh","name":"ENTRADAS","kind":"Class","position":{"x":632.5,"y":127},"discriminator":"Class","stereotypes":[],"customDimension":{"width":248.34375,"height":259}}
+{"_id":"5jVN6dfKz0Joei0r","name":"any","kind":"StandardType","visibility":"public"}
+{"_id":"6TMY8Jyh5Wucm7Qd","name":"usuario_id (clave ajena)","isAbstract":false,"type":"Xjhm71I1wl7DmmMM","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"4xNBQPJUGbERjgWN","discriminator":"Property","kind":"Property","index":1}
+{"_id":"7pXulzewzLMUVffn","name":"categoria (clave ajena)","isAbstract":false,"type":"uFjMPF5ishZxgZ0u","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"4xNBQPJUGbERjgWN","discriminator":"Property","kind":"Property","index":2}
+{"_id":"BK4MWkETAYpxH3aX","name":"boolean","kind":"StandardType","visibility":"public"}
+{"_id":"ECmMedM6ra115bD1","name":"ID (cclave primaria)","isAbstract":false,"type":"Xjhm71I1wl7DmmMM","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"4xNBQPJUGbERjgWN","discriminator":"Property","kind":"Property","index":0}
+{"_id":"Ey19piPcwefNCkla","name":"date","kind":"StandardType","visibility":"public"}
+{"_id":"IHMVSDfJp1gz1Rsl","name":"password","isAbstract":false,"type":"uFjMPF5ishZxgZ0u","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"vgAYsq6Az2QwT0dv","discriminator":"Property","kind":"Property","index":4}
+{"_id":"MpNRruAJHwDy83y4","name":"nombre","isAbstract":false,"type":"uFjMPF5ishZxgZ0u","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"4vADSTeIcakvzg6T","discriminator":"Property","kind":"Property","index":1}
+{"_id":"NpLNnH6Hxc94rxdg","name":"double","kind":"StandardType","visibility":"public"}
+{"_id":"OgvBGnYaoZJkveUy","name":"ID (clave clave primaria)","isAbstract":false,"type":"Xjhm71I1wl7DmmMM","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"4vADSTeIcakvzg6T","discriminator":"Property","kind":"Property","index":0}
+{"_id":"SCC2pqQU0qnHc9VF","name":"titulo","isAbstract":false,"type":"uFjMPF5ishZxgZ0u","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"4xNBQPJUGbERjgWN","discriminator":"Property","kind":"Property","index":3}
+{"_id":"SUeGnbULMW8hDuTp","name":"uses","diagramId":"wZSSsUNoLyHqXMYh","visibility":"public","kind":"Relationship","relationshipKind":"Usage","source":{"id":"4xNBQPJUGbERjgWN","isAutoDocking":true},"target":{"id":"4vADSTeIcakvzg6T","isAutoDocking":false,"dockingSide":"TOP"}}
+{"_id":"UXkn9hMXosSGysMZ","name":"ID (clave clave primaria)","isAbstract":false,"type":"Xjhm71I1wl7DmmMM","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"vgAYsq6Az2QwT0dv","discriminator":"Property","kind":"Property","index":0}
+{"_id":"VGCro0206cT0p7jz","name":"nombre","isAbstract":false,"type":"uFjMPF5ishZxgZ0u","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"vgAYsq6Az2QwT0dv","discriminator":"Property","kind":"Property","index":1}
+{"_id":"Xjhm71I1wl7DmmMM","name":"int","kind":"StandardType","visibility":"public"}
+{"_id":"c2p3cnx2WxHKNmho","name":"descripcion","isAbstract":false,"type":"uFjMPF5ishZxgZ0u","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"4xNBQPJUGbERjgWN","discriminator":"Property","kind":"Property","index":4}
+{"_id":"gknmEdo6PzjuwHPk","name":"apellido","isAbstract":false,"type":"uFjMPF5ishZxgZ0u","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"vgAYsq6Az2QwT0dv","discriminator":"Property","kind":"Property","index":2}
+{"_id":"i04LlHlyUa8WrABO","name":"fecha","isAbstract":false,"type":"p6NJIbS8RsEgRMwu","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"4xNBQPJUGbERjgWN","discriminator":"Property","kind":"Property","index":5}
+{"_id":"j4Cy1yTGZFXRNR3J","name":"float","kind":"StandardType","visibility":"public"}
+{"_id":"mE6vXYxseiR5roFk","name":"fecha","isAbstract":false,"type":"p6NJIbS8RsEgRMwu","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"vgAYsq6Az2QwT0dv","discriminator":"Property","kind":"Property","index":5}
+{"_id":"mw8fTKXFWew20uWJ","name":"uses","diagramId":"wZSSsUNoLyHqXMYh","visibility":"public","kind":"Relationship","relationshipKind":"Usage","source":{"id":"4xNBQPJUGbERjgWN","isAutoDocking":true},"target":{"id":"vgAYsq6Az2QwT0dv","isAutoDocking":false,"dockingSide":"RIGHT"}}
+{"_id":"p6NJIbS8RsEgRMwu","name":"time","kind":"StandardType","visibility":"public"}
+{"_id":"pYmAAEtAgEP6PiqC","name":"void","kind":"StandardType","visibility":"public"}
+{"_id":"sde7PoddEWsinVxy","name":"email","isAbstract":false,"type":"uFjMPF5ishZxgZ0u","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"vgAYsq6Az2QwT0dv","discriminator":"Property","kind":"Property","index":3}
+{"_id":"uFjMPF5ishZxgZ0u","name":"string","kind":"StandardType","visibility":"public"}
+{"_id":"vgAYsq6Az2QwT0dv","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"wZSSsUNoLyHqXMYh","name":"USUARIOS","kind":"Class","position":{"x":231.5,"y":358},"discriminator":"Class","stereotypes":[],"customDimension":{"width":259.34375,"height":239}}
+{"_id":"wZSSsUNoLyHqXMYh","name":"new diagram","kind":"ClassDiagram","titlePosition":{"x":550,"y":24}}
+{"_id":"xQ39YiQQbPHF6PNX","name":"char","kind":"StandardType","visibility":"public"}
