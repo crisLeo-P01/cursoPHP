@@ -13,7 +13,7 @@ if( !is_dir( 'mi_carpeta' ) ) { // is_dir => comprueba si existe la carpeta
 echo "<hr><h3>Contenido de la carpeta</h3>";
 
 if( $gestor = opendir( './mi_carpeta' ) ) { // abriendo el directorio
-  while ( false !== ( $archivo = readdir( $gestor ) ) ) { // Referencia 1
+  while ( ( $archivo = readdir( $gestor ) ) !== false  ) { // Referencia 1
     if( $archivo != '.' && $archivo != '..' ) { // Referencia 2
       echo $archivo . '<br>';
     }
