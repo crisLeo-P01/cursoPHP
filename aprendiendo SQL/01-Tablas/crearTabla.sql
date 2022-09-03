@@ -1,4 +1,13 @@
 /*
+EN CONSOLA DE MYSQL
+Mostrar todas las base de datos -> show databases;
+Entrar a una base de datos -> use nombre_basededatos;
+Mostrar todas las tablas -> show tables;
+Mostrar el contenido de la tabla -> describe nombre_tabla;
+*/
+
+
+/*
 TIPOS DE DATOS
 
 int(num cifras)                       ENTERO
