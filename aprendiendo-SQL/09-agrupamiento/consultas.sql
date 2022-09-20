@@ -3,6 +3,10 @@ SELECT COUNT(titulo) AS 'N° de entradas', categoria_id FROM entradas GROUP BY c
 
 # CONSULTA AGRUPAMIENTO CON CONDICIONES
 SELECT COUNT(titulo) AS 'N° de entradas', categoria_id FROM entradas GROUP BY categoria_id HAVING COUNT(titulo) <= 3;
+/*
+HAVING
+Es una cláusula que evalua cada grupo por la siguiente clúasula 👇
+*/
 
 /*
 FUNCIONES DE AGRUPAMIENTO
