@@ -9,11 +9,24 @@ CREATE TABLE usuarios (
   CONSTRAINT uq_email UNIQUE(email)
 ) ENGINE=InnoDB;
 
+-- REFETENCIA 1 -> CONSTRAINT se usa para definir reglas para permitir o restringir 
+-- qué valores se pueden almacenar en columnas. El propósito de inducir restricciones es 
+-- reforzar la integridad de una base de datos.
+
+-- ///////////////////////////////////
+
 CREATE TABLE categorias (
   id        int(255) auto_increment not null,
   nombre    varchar(100),
   CONSTRAINT pk_categorias PRIMARY KEY(id)
 ) ENGINE=InnoDB; -- REFERENCIA 2
+
+-- REFERENCIA 2 -> el motor de almacenamiento InnoDB. La principal ventaja de este motor recae 
+-- en la seguridad de las operaciones. InnoDB permite la ejecución de transacciones, esto nos 
+-- garantiza que los datos se persisten de forma correcta y si existe algún, error podamos revertir 
+-- todos los cambios realizados.
+
+-- ///////////////////////////////////
 
 CREATE TABLE entradas (
   id              int(255) auto_increment not null,
@@ -26,14 +39,6 @@ CREATE TABLE entradas (
   CONSTRAINT fk_entrada_usuario FOREIGN KEY(usuario_id) REFERENCES usuarios(id),
   CONSTRAINT fk_entrada_categoria FOREIGN KEY(categoria_id) REFERENCES categorias(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
-
--- REFETENCIA 1 -> CONSTRAINT se usa para definir reglas para permitir o restringir 
--- qué valores se pueden almacenar en columnas. El propósito de inducir restricciones es 
--- reforzar la integridad de una base de datos.
---REFERENCIA 2 -> el motor de almacenamiento InnoDB. La principal ventaja de este motor recae 
--- en la seguridad de las operaciones. InnoDB permite la ejecución de transacciones, esto nos 
--- garantiza que los datos se persisten de forma correcta y si existe algún error podamos revertir 
--- todos los cambios realizados.
 
 -- INFO GENERAL ////////////////
 -- Las RESTRICCIONES de MySQL se utilizan para limitar el tipo de datos que se pueden insertar en una tabla.
