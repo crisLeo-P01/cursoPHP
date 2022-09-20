@@ -6,7 +6,6 @@ Mostrar todas las tablas -> show tables;
 Mostrar el contenido de la tabla -> describe nombre_tabla;
 */
 
-
 /*
 TIPOS DE DATOS
 
