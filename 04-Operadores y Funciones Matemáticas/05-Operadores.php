@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Operadores</title>
 </head>
@@ -37,33 +36,23 @@
     $numero02 = $_POST["num2"];
     $operacion = $_POST["selOperador"];
 
-    calcular($operacion);
+    calcular($numero01, $numero02, $operacion);
 
   }
 
-  function calcular($calculo) {
+  function calcular($numero01, $numero02, $calculo) {
     if(!strcmp("Suma", $calculo)) {
-      global $numero01;
-      global $numero02;
       echo "El resultado es: " . ($numero01 + $numero02) . "<br>";
-    }elseif(!strcmp("Resta", $calculo)) {
-      global $numero01;
-      global $numero02;
+    } elseif(!strcmp("Resta", $calculo)) {
       echo "El resultado es: " . ($numero01 - $numero02) . "<br>";
-    }elseif (!strcmp("Multiplicación", $calculo)) {
-      global $numero01;
-      global $numero02;
+    } elseif (!strcmp("Multiplicación", $calculo)) {
       echo "El resultado es de " . ($numero01 * $numero02) . "<br>";
-    }elseif (!strcmp("División", $calculo)) {
-      global $numero01;
-      global $numero02;
+    } elseif (!strcmp("División", $calculo)) {
       echo "El resultado es de " . ($numero01 / $numero02) . "<br>";
     } elseif (!strcmp("Incremento", $calculo)) {
-      global $numero01;
       $numero01++;
       echo "El resultado del incremento es de " . $numero01;
-    }else {
-      global $numero01;
+    } else {
       $numero01--;
       echo "El resultado del decremento es de " . $numero01;
     }

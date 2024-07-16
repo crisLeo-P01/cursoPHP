@@ -3,12 +3,12 @@
 $dia = 7;
 
 switch ($dia) {
-    case 1: echo 'Es lunes'; break;
-    case 2: echo  'Es martes'; break;
-    case 3: echo  'Es miércoles'; break;
-    case 4: echo 'Es jueves'; break;
-    case 5: echo  'Es viernes'; break;
-    default: echo 'Es fin de semana';
+  case 1: echo 'Es lunes'; break;
+  case 2: echo  'Es martes'; break;
+  case 3: echo  'Es miércoles'; break;
+  case 4: echo 'Es jueves'; break;
+  case 5: echo  'Es viernes'; break;
+  default: echo 'Es fin de semana';
 }
 
 echo '<hr>';

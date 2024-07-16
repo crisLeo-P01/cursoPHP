@@ -27,11 +27,11 @@ echo (multiplicar( 5, 9 ) . "<br>");
 // ////////////////////////////////////////////////
 
 function tablaMultiplicar($numMulti) {
-    echo "<h4>La tabla de multiplicar del $numMulti</h4>";
-    for( $i = 1; $i <= 10; $i++ ) {
-        $operacion_multi = $numMulti * $i;
-        echo "$numMulti x $i = $operacion_multi <br>";
-    }
+  echo "<h4>La tabla de multiplicar del $numMulti</h4>";
+  for( $i = 1; $i <= 10; $i++ ) {
+    $operacion_multi = $numMulti * $i;
+    echo "$numMulti x $i = $operacion_multi <br>";
+  }
 }
 tablaMultiplicar(9);
 
@@ -42,9 +42,9 @@ for($i = 0; $i <= 10; $i++) {
 
 //Otra forma es ingresando un número a través de la URL
 if(isset($_GET['numeroget'])) {
-    tablaMultiplicar($_GET['numeroget']);
+  tablaMultiplicar($_GET['numeroget']);
 } else {
-    echo 'No hay tabla por multiplicar <br>';
+  echo 'No hay tabla por multiplicar <br>';
 }
 
 //////////////////////////////////////////////////

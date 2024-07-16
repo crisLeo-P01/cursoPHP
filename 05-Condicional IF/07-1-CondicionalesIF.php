@@ -3,9 +3,9 @@
 $num3 = 7;
 
 if($num3 < 10) {
-    echo "El número $num3 es menor a 10";
-}else {
-    echo "El numero $num3 es mayor";
+  echo "El número $num3 es menor a 10";
+} else {
+  echo "El numero $num3 es mayor";
 }
 
 echo '<hr>';
@@ -13,9 +13,9 @@ echo '<hr>';
 $provincia = "mendoza";
 
 if($provincia == "mendoza") {
-    echo 'la provincia es mendoza';
-}else {
-    echo 'la provincia no es mendoza';
+  echo 'la provincia es mendoza';
+} else {
+  echo 'la provincia no es mendoza';
 }
 
 echo '<hr>';
@@ -26,14 +26,14 @@ $ciudad = 'Los Angeles';
 $continente = 'Norte América';
 
 if($edad >= 18) {
-    echo "$nombre es mayor de edad <br>";
-    if($continente == 'Norte América') {
-      echo "$nombre vive en $continente <br>";
-    }else {
-      echo 'Vive fuera de Norte América <br>';
-    }
+  echo "$nombre es mayor de edad <br>";
+  if($continente == 'Norte América') {
+    echo "$nombre vive en $continente <br>";
+  } else {
+    echo 'Vive fuera de Norte América <br>';
+  }
 } else {
-    echo "$nombre es menor de edad <br>";
+  echo "$nombre es menor de edad <br>";
 }
 
 //ELSEIF
