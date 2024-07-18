@@ -9,7 +9,7 @@
 <body>
   <h3>Formulario</h3>
   <!-- multipart/form-data: Permite enviar archivos desde el formulario al servidor -->
-  <form action="" method="POST" enctype="multipart/form-data">
+  <form action="guardarFicha.php" method="POST" enctype="multipart/form-data">
     <label for="nombre">Nombre:</label>
     <input type="text" name="nombre">
 
@@ -25,11 +25,6 @@
 
     <br>
 
-    <label for="archivo">Archivo:</label>
-    <input type="file" name="archivo">
-
-    <br>
-
     <label for="email">Email:</label>
     <input type="email" name="email">
 
@@ -40,24 +35,9 @@
 
     <br>
 
-    <label for="color">Color:</label>
-    <input type="color" name="color">
-
-    <br>
-
     <label for="sexo">Color:</label>
     Hombre <input type="checkbox" name="sexo" value="Hombre">
     Mujer <input type="checkbox" name="sexo" value="Mujer">
-
-    <br>
-
-    <label for="color">Color:</label>
-    <input type="color" name="color">
-
-    <br>
-
-    <label for="number">Número:</label>
-    <input type="number" name="number">
 
     <br>
 
@@ -68,10 +48,6 @@
 
     <br>
 
-    <label for="url">Introduce tu sitio web:</label>
-    <input type="url" name="url">
-
-    <br>
     <label for="comentario">Comentario</label>
     <textarea name="comentario" id="" cols="30" rows="10"></textarea>
 
