@@ -38,7 +38,7 @@ var_dump($contactos);
 
 // Para extraer un dato en concreto
 echo '<br>';
-echo $contactos[1]['nombre'];
+echo 'Mi nombre es ' . $contactos[1]['nombre'] . ' y mi mail es ' . $contactos[1]['email'];
 
 echo '<br>';
 foreach($contactos as $key => $contacto) {
