@@ -46,10 +46,17 @@ function test_input($data) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resultado de Validación</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+  </style>
 </head>
 
 <body>
-  <h2>Resultado de Validación</h2>
+  
+  <h2 class="titulo-principal" style="color: blueviolet;">Resultado de Validación</h2>
   <?php
   if (!empty($nombreErr)) {
     echo "<p>Error en el nombre: $nombreErr</p>";
