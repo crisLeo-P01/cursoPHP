@@ -5,9 +5,11 @@ $archivo = fopen('fichero_texto.txt', "a+");
 
 /*
 Permisos de archivo PHP
-  r => Permiso de lectura
-  x => Permiso de ejecucion
-  w => Permiso de escritura
+  r  => Permiso de lectura
+  x  => Permiso de ejecucion
+  w  => Permiso de escritura
+  w+ => Permiso de escritura y lectura
+  a  => Permiso de leer
   a+ => Permiso de leer y escribir
 */
 

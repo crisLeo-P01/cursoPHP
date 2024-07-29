@@ -24,6 +24,4 @@ if( $_FILES['images']['type'] == 'image/jpg' || $_FILES['images']['type'] == 'im
 }
 
 /* REFERENCIA 1 -> "move_uploaded_file" recibe dos parámetros. El primero es la imagen que se carga en el 
-formulario con un nombre temporal. El segundo parámetro es la ruta en donde va a ir el archivo. */
-
-?>
+formulario con un nombre temporal. El segundo pará,.metro es la ruta en donde va a ir el archivo. *

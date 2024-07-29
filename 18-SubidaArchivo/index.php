@@ -11,7 +11,8 @@
   <h3>Subiendo archivo al servidor</h3>
   <form action="upload.php" method="POST" enctype="multipart/form-data">
     <label for="images">Seleccionar archivo</label>
-    <input type="file" name="images" accept=".jpg, .png"> <br> <!-- accept -> son los archivos que admite el input -->
+    <!-- accept -> son los archivos que admite el input -->
+    <input type="file" name="images" accept=".jpg, .png"> <br> 
 
     <input type="submit" value="Enviar">
   </form>
