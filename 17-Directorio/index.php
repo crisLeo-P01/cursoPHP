@@ -10,6 +10,7 @@ if( !is_dir( 'mi_carpeta' ) ) { // is_dir => comprueba si existe la carpeta
 
 // Borrar un directorio
 // rmdir('mi_carpeta');
+
 echo "<hr><h3>Contenido de la carpeta</h3>";
 
 if( $gestor = opendir( './mi_carpeta' ) ) { // abriendo el directorio
@@ -21,10 +22,10 @@ if( $gestor = opendir( './mi_carpeta' ) ) { // abriendo el directorio
 }
 
 // Referencia 1 ------
-// Mientras no de false, mostrame todos los archivos que estan 
-// dentro de la carpeta
+/* Mientras no de false, mostrame todos los archivos que estan 
+dentro de la carpeta */
 
 // // Referencia 2 ------
-// ." (un punto) es la referencia hacia tu carpeta actual y ".." (
-// dos puntos) es la referencia hacia un nivel arriba de la carpeta actual, 
-// por eso el if valida que no sea "." ni ".."
+/* ." (un punto) es la referencia hacia tu carpeta actual y ".." (
+ dos puntos) es la referencia hacia un nivel arriba de la carpeta actual, 
+ por eso el if valida que no sea "." ni ".." */
