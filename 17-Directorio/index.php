@@ -1,8 +1,8 @@
 <?php
 
 // Crear un directorio
-if( !is_dir( 'mi_carpeta' ) ) { // is_dir => comprueba si existe la carpeta
-  mkdir('mi_carpeta', 0777) or die('La carpeta no pudo ser creada');
+if ( !is_dir('mi_carpeta')) { // is_dir => comprueba si existe la carpeta
+  mkdir ('mi_carpeta', 0777) or die ('La carpeta no pudo ser creada');
   echo "La carpeta fue creada con éxito <br>";
 } else {
   echo "La carpeta ya existe <br>";
@@ -13,9 +13,9 @@ if( !is_dir( 'mi_carpeta' ) ) { // is_dir => comprueba si existe la carpeta
 
 echo "<hr><h3>Contenido de la carpeta</h3>";
 
-if( $gestor = opendir( './mi_carpeta' ) ) { // abriendo el directorio
-  while ( ( $archivo = readdir( $gestor ) ) !== false  ) { // Referencia 1
-    if( $archivo != '.' && $archivo != '..' ) { // Referencia 2
+if ($gestor = opendir('./mi_carpeta')) { // abriendo el directorio
+  while (($archivo = readdir( $gestor)) !== false) { // Referencia 1
+    if ($archivo != '.' && $archivo != '..') { // Referencia 2
       echo $archivo . '<br>';
     }
   }

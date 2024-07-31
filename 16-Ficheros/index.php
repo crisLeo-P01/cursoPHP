@@ -33,6 +33,11 @@ rename('fichero_texto.txt', 'texto_fichero.txt');
 
 // Eliminar un archivo
 // unlink('fichero_copiado.txt') or die('Error al eliminar el archivo');
+if(file_exists('fichero_texto')) {
+  unlink(('fichero_texto'));
+} else {
+  echo 'El archivo no existe';
+};
 
 // Comprueba si existe un archivo
 if( file_exists('fichero_texto.txt') ) {
