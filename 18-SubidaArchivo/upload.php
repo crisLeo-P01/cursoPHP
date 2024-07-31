@@ -4,22 +4,22 @@
 // $_FILES['archivo']['tmp_name']; // carpeta temporal
 // $_FILES['archivo']['type']; // tipo de archivo
 
-if( $_FILES['images']['type'] == 'image/jpg' || $_FILES['images']['type'] == 'image/jpeg' || $_FILES['images']['type'] == 'image/png') {
-  if( !file_exists('images') ) { // si el directorio no existe...
-    if( !mkdir('images', 0777) ) { // me crea uno con todos los permisos (0777)
+if ( $_FILES['images']['type'] == 'image/jpg' || $_FILES['images']['type'] == 'image/jpeg' || $_FILES['images']['type'] == 'image/png') {
+  if ( !file_exists('images') ) {
+    if ( !mkdir('images', 0777) ) {
       echo 'Error al crear carperta';
-      exit(); // detiene la ejecución del script
+      exit ();
     }
   }
 
-  chmod('images', 0777); // es para darle permisos de lectura y escritura a una carpeta o archivo
+  $targetFile = 'images/'.$_FILES['images']['name'];
 
-  move_uploaded_file($_FILES['images']['tmp_name'], 'images/'.$_FILES['images']['name']); // REFERENCIA 1
-  header('Refresh: 5; URL=index.php');
+  move_uploaded_file ($_FILES['images']['tmp_name'], $targetFile); // REFERENCIA 1
+  header ('Refresh: 5; URL=index.php');
   echo 'La imagen se subio correctamente';
 
 } else {
-  header('Refresh: 5; URL=index.php');
+  header ('Refresh: 5; URL=index.php');
   echo 'El formato de imagen no es el correcto. Seleccione un formato permitido';
 }
 
