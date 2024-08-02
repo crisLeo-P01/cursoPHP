@@ -2,8 +2,6 @@
 
 $dir = './images/';
 
-$dir = './images/';
-
 if (is_dir($dir)) {
   $images = scandir($dir);
 
