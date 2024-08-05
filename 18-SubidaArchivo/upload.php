@@ -5,8 +5,8 @@
 // $_FILES['archivo']['type']; // tipo de archivo
 
 if ( $_FILES['images']['type'] == 'image/jpg' || $_FILES['images']['type'] == 'image/jpeg' || $_FILES['images']['type'] == 'image/png') {
-  if ( !file_exists('images') ) {
-    if ( !mkdir('images', 0777) ) {
+  if (!file_exists('images')) {
+    if (!mkdir('images', 0777)) {
       echo 'Error al crear carperta';
       exit ();
     }
