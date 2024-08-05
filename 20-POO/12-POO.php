@@ -1,32 +1,38 @@
 <?php
 
 class Coche {
-  //PROPIEDADES
-  var $ruedas;
-  var $color;
-  var $motor;
+  // Propiedades
+  public $ruedas;
+  public $color;
+  public $motor;
 
-  function Coche() { //Método constructor - Se encargara de darle un estado inicial al objeto
-    $this -> ruedas = 4;
-    $this -> color = "";
-    $this -> motor = 1600;
+  // Constructor que acepta parámetros
+  public function __construct ($color = "", $motor = 1600) {
+    $this->ruedas = 4;
+    $this->color = $color;
+    $this->motor = $motor;
   }
 
-  //MÉTODOS O FUNCIONALIDADES
-  function arrancar() {
+  // Métodos o funcionalidades
+  public function arrancar () {
     echo "Estoy arrancando<br>";
   }
-  function frenar() {
+
+  public function frenar () {
     echo "Estoy frenando<br>";
   }
-  function girar() {
+
+  public function girar () {
     echo "Estoy girando<br>";
   }
-
 }
 
-$ferrari = new Coche(); //Instancias o ejemplar
-$lamborghini = new Coche();
+// Instancias o ejemplares
+$ferrari = new Coche ("rojo", 3000);
+$lamborghini = new Coche ("amarillo", 3500);
 
-$ferrari -> girar();
-echo "El ferrari tiene " . $ferrari -> ruedas . " ruedas<br>";
+$ferrari -> girar ();
+echo "El Ferrari es de color " . $ferrari -> color . " y tiene un motor de " . $ferrari -> motor . " cc y " . $ferrari -> ruedas . " ruedas<br>";
+
+$lamborghini -> arrancar ();
+echo "El Lamborghini es de color " . $lamborghini -> color . " y tiene un motor de " . $lamborghini -> motor . " cc y " . $lamborghini -> ruedas . " ruedas<br>";
