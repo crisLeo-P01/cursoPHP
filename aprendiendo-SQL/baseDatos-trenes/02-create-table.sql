@@ -22,17 +22,17 @@ COLLATE=utf8mb4_unicode_ci;
 CREATE TABLE `trenes` (
   `numero_serie` VARCHAR(10) NOT NULL,
 
-  `lineas_id`  BIGINT(20) UNSIGNED NOT NULL,
+  `linea_id`  BIGINT(20) UNSIGNED NOT NULL,
   `color` VARCHAR(15) NOT NULL,
-  `tipo` TINYINT(4) NOT NULL,
+  `tipo` VARCHAR(30) NOT NULL,
   `anio` INT(4) NOT NULL,
 
   `creado_en` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `actualizado_en` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
   PRIMARY KEY (numero_serie),
-  CONSTRAINT `trenes_lineas_id_foreign`
-  FOREIGN KEY (`lineas_id`) REFERENCES `lineas` (`id`)
+  CONSTRAINT `trenes_linea_id_foreign`
+  FOREIGN KEY (`linea_id`) REFERENCES `lineas` (`id`)
 )
 DEFAULT CHARSET=utf8mb4
 COLLATE=utf8mb4_unicode_ci;
