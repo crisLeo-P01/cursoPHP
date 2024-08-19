@@ -1,0 +1,19 @@
+{
+    "name": "crisl/22-php-my-sql-juntos",
+    "description": "Proyecto de curso de conexion con bases de datos",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cristian Paiva",
+            "email": "38576658+crisLeo-P01@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Database\\": "database/",
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
