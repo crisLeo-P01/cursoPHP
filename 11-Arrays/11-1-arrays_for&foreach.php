@@ -17,8 +17,8 @@ echo $bandas[3];
 // Recorriendo los array con FOR
 echo '<h3>Recorriendo array con FOR</h3>';
 echo '<ul>';
-for( $i = 0; $i < count( $peliculas ); $i++ ) {
-  echo '<li>' . $peliculas[$i] . '</li>';
+for ($i = 0; $i < count($peliculas); $i++) {
+    echo '<li>' . $peliculas[$i] . '</li>';
 }
 echo '</ul>';
 
@@ -27,7 +27,7 @@ echo '<br>';
 // Recorriendo los array con FOREACH
 echo '<h3>Recorriendo array con FOREACH</h3>';
 echo '<ul>';
-foreach( $bandas as $banda ) {
-  echo '<li>' . $banda . '</li>';
+foreach ($bandas as $banda) {
+    echo '<li>' . $banda . '</li>';
 }
 echo '</ul>';
