@@ -34,28 +34,25 @@ echo "El número redondeado de 8.326578 con dos decimales es de " . $num8 . "<br
 
 echo "<h3>Casting</h3>";
 /*
-  PHP no requiere (ni soporta) la definición explicita de tipos en la declaración
-  de variables; el tipo de la variable se determina por el contexto en el cual se
-  emplea la variable. Es decir, si se asigna un valor string a una variable $var,
-  entonces $var se convierte en un string. Si un valor integer es entonces asignado
-  a la misma variable $var, ésta se convierte en integer.
+    PHP no requiere (ni soporta) la definición explicita de tipos en la declaración
+    de variables; el tipo de la variable se determina por el contexto en el cual se
+    emplea la variable. Es decir, si se asigna un valor string a una variable $var,
+    entonces $var se convierte en un string. Si un valor integer es entonces asignado
+    a la misma variable $var, ésta se convierte en integer.
 
-  Un ejemplo de la conversión de tipos automática de PHP es el operador suma '+'.
-  Si al menos uno de los operandos es float, entonces ambos operandos son evaluados
-  como floats y el resultado será un float. De otra manera, los operandos serán
-  interpretados como integers, y el resultado será entonces integer. Tenga en cuenta
-  que esto no implica que se cambien los tipos de los propios operandos; el único cambio
-  es en como se evalúan los operandos y en el tipo de expresión en sí mismo.
+    Un ejemplo de la conversión de tipos automática de PHP es el operador suma '+'.
+    Si al menos uno de los operandos es float, entonces ambos operandos son evaluados
+    como floats y el resultado será un float. De otra manera, los operandos serán
+    interpretados como integers, y el resultado será entonces integer. Tenga en cuenta
+    que esto no implica que se cambien los tipos de los propios operandos; el único cambio
+    es en como se evalúan los operandos y en el tipo de expresión en sí mismo.
  */
 $number01 = "5";
-$number01 += 2; //El $number01 es un string pero al colocarle un incremento PHP, interpreta que es de tipo entero.
-$number01 += 5.75; //PHP ahora interpreta que es de tipo float. Implícitamente interpreta que es una variable de tipo float
+$number01 += 2; // El $number01 es un string pero al colocarle un incremento PHP, interpreta que es de tipo entero.
+$number01 += 5.75; // PHP ahora interpreta que es de tipo float. Implícitamente interpreta que es una variable de tipo float
 echo $number01 . "<br>";
 
 // Casting explícito
 $number02 = "14";
 $resultado = (int)$number02;
 echo $number02;
-
-
-

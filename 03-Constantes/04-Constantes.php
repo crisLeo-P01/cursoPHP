@@ -3,6 +3,8 @@
 define("NOMBRE", "Cristian"); // definición de una constante
 define("EDAD", 34);
 
+const APELLIDO = 'Beckham'; 
+
 // Las constantes como cualquier otro tipo de programación, no cambian
 
 echo "El nombre es: " . NOMBRE . "<br>"; // Al imprimir la variable si hace sin el signo dólar ($)

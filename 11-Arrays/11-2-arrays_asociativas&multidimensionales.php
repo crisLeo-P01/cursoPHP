@@ -33,6 +33,13 @@ $contactos = array(
     ),
 );
 
+function saludar($nombre)
+{
+    echo "Hola, mi nombre es $nombre";
+}
+
+saludar('Francisco');
+
 
 var_dump($contactos);
 
