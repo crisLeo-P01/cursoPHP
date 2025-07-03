@@ -1,9 +1,6 @@
 <?php
 
 // arrays asociativas
-/* Los arrays asociativos son arrays cuyos keys son strings 
-con valores personalizados. Un array asociativo puede 
-llevar también valores numéricos */
 $personas = array(
     'nombre' => 'Cristian',
     'apellido' => 'Paiva',
@@ -12,6 +9,15 @@ $personas = array(
 
 var_dump($personas);
 var_dump($personas['apellido']);
+
+// Otra forma de crear un array asociativo
+$estudiante = [
+    'nombre' => 'Francisco',
+    'apellido' => 'Pérez',
+    'edad' => 18,
+];
+
+echo "Estudiante: " . $estudiante['nombre'] . ' ' . $estudiante['apellido'] . ', Edad: ' . $estudiante['edad'] . '<br>';
 
 // arrays multidimencionales
 /* Los arreglos multidimensionales son muy poderosos porque permiten 
