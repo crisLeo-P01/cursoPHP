@@ -17,13 +17,15 @@ $estudiante = [
     'edad' => 18,
 ];
 
-echo "Estudiante: " . $estudiante['nombre'] . ' ' . $estudiante['apellido'] . ', Edad: ' . $estudiante['edad'] . '<br>';
+echo "Estudiante: " . $estudiante['nombre'] . ' ' . $estudiante['apellido'] . '. <br>';
+echo 'Edad: ' . $estudiante['edad'] . '<br>';
 
 // arrays multidimencionales
 /* Los arreglos multidimensionales son muy poderosos porque permiten 
 que aún mas información sea almacenada en una variable, 
 convirtiendo en portables a inmensos conjuntos de datos, 
 como veremos cuando comenzemos a trabajar con bases de datos. */
+
 $contactos = array(
     array(
         'nombre' => 'Male',
